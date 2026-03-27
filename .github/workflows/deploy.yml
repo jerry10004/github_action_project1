@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: "hello.c"
-          target: "/home/${{ secrets.SERVER_USER }}/test"
+          target: "/home/${{ secrets.SERVER_USER }}/github_action_project"
 
       - name: 서버에서 컴파일 및 실행
         uses: appleboy/ssh-action@v0.1.10
